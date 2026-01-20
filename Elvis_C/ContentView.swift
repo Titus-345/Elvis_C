@@ -21,23 +21,25 @@ struct ContentView: View {
                 Button("Peace"){
                     caption = "Peace"
                     picture = "peacesign"
-                Button("Love"){
-                        caption = "Love"
-                        picture = "heart.fill"
-                Button("Understanding"){
-                            caption = "Understanding"
-                            picture = "lightbulb"
-                        }
-                        
-                    }
-                    
                 }
-                .padding()
+                Button("Love"){
+                    caption = "Love"
+                    picture = "heart.fill"
+                }
+                Button("Understanding"){
+                    caption = "Understanding"
+                    picture = "lightbulb"
+                }
+                
             }
+            .buttonStyle(.glassProminent)
+            
         }
-        
+        .foregroundStyle(.purple)
+        .padding()
     }
 }
+
 #Preview {
     ContentView()
 }
