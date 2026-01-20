@@ -13,9 +13,18 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("What's So Funny 'Bout")
+                .font(.largeTitle)
+                .fontWeight(.heavy)
             Spacer()
             Image(systemName: picture)
+                .resizable()
+                .scaledToFit()
+                .foregroundStyle(.black)
+                .fontWeight(.none)
+                .frame(width: 350, height: 350)
             Text(caption)
+                .font(.largeTitle)
+                .fontWeight(.heavy)
             Spacer()
             HStack {
                 Button("Peace"){
@@ -30,12 +39,14 @@ struct ContentView: View {
                     caption = "Understanding"
                     picture = "lightbulb"
                 }
-                
             }
             .buttonStyle(.glassProminent)
-            
+            .tint(.purple)
+            .foregroundStyle(.white)
+            .fontWeight(.none)
         }
         .foregroundStyle(.purple)
+        .fontWeight(.bold)
         .padding()
     }
 }
