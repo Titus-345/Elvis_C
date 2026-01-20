@@ -21,7 +21,7 @@ struct ContentView: View {
                 .scaledToFit()
                 .foregroundStyle(.black)
                 .fontWeight(.none)
-                .frame(width: 350, height: 350)
+                .frame(width: 300, height: 300)
             Text(caption)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
